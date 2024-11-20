@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+    background-image: url(https://media.istockphoto.com/id/157639696/es/foto/p%C3%BArpura-espacio-estrellas.jpg?s=612x612&w=0&k=20&c=_lI0YW4IsNgarhPRY80spv_RkkmEYUoC8M8y8YXbRVM=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.logo-img {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+/* MAIN */
+
+.hero {
+    text-align: center;
+    background-image: url(https://www.somosxbox.com/wp-content/uploads/2019/05/marvels-avengers-somosxbox.jpg?mrf-size=m);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.hero p {
+    font-size: 25px;
+    margin: 50px;
+    color: white;
+}
+
+.hero div ul {
+    list-style: none;
+}
+
+.hero div ul li {
+    display: inline-block;
+}
+
+.hero div ul li img {
+    height: 500px;
+    width: 200px;
+}
+
+section h1 {
+    color: white;
+    font-size: 60px;
+}
+
+section form div {
+  color: white;
+  padding: 5px;
+}
+
+.super-main {
+    text-align: center;
+    background-image: url(https://www.somosxbox.com/wp-content/uploads/2019/05/marvels-avengers-somosxbox.jpg?mrf-size=m);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+  
+  .super-main {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .heroes-box {
+    width: 100%;                    
+    background-color: white;      
+    margin: 20px 0;                 
+    padding: 15px;                  
+    box-sizing: border-box;         
+    border: 2px solid #000;         
+  }
+  
+  .hero-1-box {
+    display: flex;                  
+    align-items: center;            
+    justify-content: space-between; 
+    padding: 20px;                  
+  }
+  
+  .hero-1-box img {
+    width: 40%;                      
+    height: auto;                    
+    margin-right: 20px;              
+  }
+  
+  .hero-1-box .text {
+    width: 55%;                      
+    text-align: left;                
+  }
+  
+  .hero-2-box {
+    display: flex;                  
+    align-items: center;            
+    justify-content: space-between; 
+    padding: 20px;                  
+  }
+  
+  .hero-2-box .text {
+    width: 55%;                      
+    text-align: left;                
+  }
+  
+  .hero-2-box img {
+    width: 40%;                      
+    height: auto;                    
+    margin-left: 20px;               
+  }
+  
+  .hero-vs-box {
+    display: flex;                  
+    align-items: center;            
+    justify-content: space-between; 
+    padding: 20px;                  
+  }
+  
+  .hero-vs-box img {
+    width: 30%;                      
+    height: auto;                    
+  }
+  
+  .hero-vs-box .text {
+    width: 40%;                      
+    text-align: center;              
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 15px;
+    margin: 8px;
+    color: black;
+    text-align: justify;
+    display: flex;
+    justify-content:center ;
+    margin-bottom: 10px;
+  }
+  
+  .text-contact {
+    color: white;
+  }
+
+  .img-heroes {
+    height: 400px;
+    width: 400px;
+    margin-top: 10px;
+  }
+
+/* FOOTER */
+
+footer {
+    background-image: url(https://media.istockphoto.com/id/157639696/es/foto/p%C3%BArpura-espacio-estrellas.jpg?s=612x612&w=0&k=20&c=_lI0YW4IsNgarhPRY80spv_RkkmEYUoC8M8y8YXbRVM=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 10px;
+}
