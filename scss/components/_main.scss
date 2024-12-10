@@ -1,0 +1,135 @@
+.hero {
+    text-align: center;
+    background-image: url(https://www.somosxbox.com/wp-content/uploads/2019/05/marvels-avengers-somosxbox.jpg?mrf-size=m);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+    h1 {
+      font-size: 60px;
+      color: white;
+    }
+  
+    p {
+      font-size: 25px;
+      margin: 50px;
+      color: white;
+    }
+  
+    div {
+      ul {
+        list-style: none;
+  
+        li {
+          display: inline-block;
+  
+          img {
+            height: 500px;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+  
+  section {
+    h1 {
+      color: white;
+      font-size: 60px;
+    }
+  
+    form {
+      div {
+        color: white;
+        padding: 5px;
+      }
+    }
+  }
+  
+  .super-main {
+    text-align: center;
+    background-image: url(https://www.somosxbox.com/wp-content/uploads/2019/05/marvels-avengers-somosxbox.jpg?mrf-size=m);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px;
+  
+    .heroes-box {
+      width: 100%;
+      background-color: white;
+      margin: 20px 0;
+      padding: 15px;
+      box-sizing: border-box;
+      border: 2px solid #000;
+    }
+  
+    .hero-1-box, .hero-2-box, .hero-vs-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+  
+      img {
+        width: 40%;
+        height: auto;
+      }
+  
+      &.hero-1-box {
+        img {
+          margin-right: 20px;
+        }
+  
+        .text {
+          width: 55%;
+          text-align: left;
+        }
+      }
+  
+      &.hero-2-box {
+        img {
+          margin-left: 20px;
+        }
+  
+        .text {
+          width: 55%;
+          text-align: left;
+        }
+      }
+  
+      &.hero-vs-box {
+        img {
+          width: 30%;
+        }
+  
+        .text {
+          width: 40%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 15px;
+    margin: 8px;
+    color: black;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .text-contact {
+    color: white;
+  }
+  
+  .img-heroes {
+    height: 400px;
+    width: 400px;
+    margin-top: 10px;
+  }

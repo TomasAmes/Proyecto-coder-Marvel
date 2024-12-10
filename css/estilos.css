@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Marvel", sans-serif;
+}
+
+header {
+  background-image: url("https://media.istockphoto.com/id/157639696/es/foto/p%C3%BArpura-espacio-estrellas.jpg?s=612x612&w=0&k=20&c=_lI0YW4IsNgarhPRY80spv_RkkmEYUoC8M8y8YXbRVM=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+header .logo-img {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+}
+
+.hero {
+  text-align: center;
+  background-image: url(https://www.somosxbox.com/wp-content/uploads/2019/05/marvels-avengers-somosxbox.jpg?mrf-size=m);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.hero h1 {
+  font-size: 60px;
+  color: white;
+}
+.hero p {
+  font-size: 25px;
+  margin: 50px;
+  color: white;
+}
+.hero div ul {
+  list-style: none;
+}
+.hero div ul li {
+  display: inline-block;
+}
+.hero div ul li img {
+  height: 500px;
+  width: 200px;
+}
+
+section h1 {
+  color: white;
+  font-size: 60px;
+}
+section form div {
+  color: white;
+  padding: 5px;
+}
+
+.super-main {
+  text-align: center;
+  background-image: url(https://www.somosxbox.com/wp-content/uploads/2019/05/marvels-avengers-somosxbox.jpg?mrf-size=m);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 20px;
+}
+.super-main .heroes-box {
+  width: 100%;
+  background-color: white;
+  margin: 20px 0;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid #000;
+}
+.super-main .hero-1-box, .super-main .hero-2-box, .super-main .hero-vs-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.super-main .hero-1-box img, .super-main .hero-2-box img, .super-main .hero-vs-box img {
+  width: 40%;
+  height: auto;
+}
+.super-main .hero-1-box.hero-1-box img, .super-main .hero-2-box.hero-1-box img, .super-main .hero-vs-box.hero-1-box img {
+  margin-right: 20px;
+}
+.super-main .hero-1-box.hero-1-box .text, .super-main .hero-2-box.hero-1-box .text, .super-main .hero-vs-box.hero-1-box .text {
+  width: 55%;
+  text-align: left;
+}
+.super-main .hero-1-box.hero-2-box img, .super-main .hero-2-box.hero-2-box img, .super-main .hero-vs-box.hero-2-box img {
+  margin-left: 20px;
+}
+.super-main .hero-1-box.hero-2-box .text, .super-main .hero-2-box.hero-2-box .text, .super-main .hero-vs-box.hero-2-box .text {
+  width: 55%;
+  text-align: left;
+}
+.super-main .hero-1-box.hero-vs-box img, .super-main .hero-2-box.hero-vs-box img, .super-main .hero-vs-box.hero-vs-box img {
+  width: 30%;
+}
+.super-main .hero-1-box.hero-vs-box .text, .super-main .hero-2-box.hero-vs-box .text, .super-main .hero-vs-box.hero-vs-box .text {
+  width: 40%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  margin: 8px;
+  color: black;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.text-contact {
+  color: white;
+}
+
+.img-heroes {
+  height: 400px;
+  width: 400px;
+  margin-top: 10px;
+}
+
+footer {
+  background-image: url("https://media.istockphoto.com/id/157639696/es/foto/p%C3%BArpura-espacio-estrellas.jpg?s=612x612&w=0&k=20&c=_lI0YW4IsNgarhPRY80spv_RkkmEYUoC8M8y8YXbRVM=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+footer ul li {
+  padding-left: 50px;
+}
+footer p {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  nav ul a {
+    font-size: 14px;
+  }
+  .hero h1 {
+    font-size: 24px;
+  }
+  .hero p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .hero ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .hero ul li img {
+    max-width: 100%;
+    height: auto;
+  }
+  footer ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .heroes-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-1-box img,
+  .hero-2-box img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav ul {
+    justify-content: center;
+  }
+  a {
+    font-size: 16px;
+  }
+  footer ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
