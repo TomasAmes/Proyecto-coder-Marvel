@@ -7,7 +7,7 @@
 }
 
 header {
-  background-image: url("https://media.istockphoto.com/id/157639696/es/foto/p%C3%BArpura-espacio-estrellas.jpg?s=612x612&w=0&k=20&c=_lI0YW4IsNgarhPRY80spv_RkkmEYUoC8M8y8YXbRVM=");
+  background-image: url(https://media.istockphoto.com/id/157639696/es/foto/p%C3%BArpura-espacio-estrellas.jpg?s=612x612&w=0&k=20&c=_lI0YW4IsNgarhPRY80spv_RkkmEYUoC8M8y8YXbRVM=);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10px;
@@ -30,8 +30,18 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   font-size: 20px;
-  color: white;
+  color: #ffffff;
   padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+}
+header nav ul li a:hover {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: #ffcccc;
+}
+header nav ul li a:active {
+  background-color: rgba(255, 0, 0, 0.7);
+  color: #ffffff;
 }
 
 .hero {
@@ -43,30 +53,56 @@ header nav ul li a {
 }
 .hero h1 {
   font-size: 60px;
-  color: white;
+  color: #ffffff;
 }
 .hero p {
   font-size: 25px;
   margin: 50px;
-  color: white;
+  color: #ffffff;
 }
-.hero div ul {
+.hero ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.hero div ul li {
-  display: inline-block;
+.hero ul li {
+  width: 500px;
+  height: 700px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
-.hero div ul li img {
-  height: 500px;
-  width: 200px;
+.hero ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+}
+.hero ul li img:hover {
+  transform: scale(1.1);
+}
+.hero ul li button,
+.hero ul li a {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 section h1 {
-  color: white;
+  color: #ffffff;
   font-size: 60px;
 }
 section form div {
-  color: white;
+  color: #ffffff;
   padding: 5px;
 }
 
@@ -77,95 +113,143 @@ section form div {
   background-attachment: fixed;
   background-size: cover;
   padding: 20px;
+  display: grid;
+  gap: 20px;
+  justify-items: center;
 }
 .super-main .heroes-box {
   width: 100%;
-  background-color: white;
+  background-color: #ffffff;
   margin: 20px 0;
   padding: 15px;
   box-sizing: border-box;
-  border: 2px solid #000;
+  border: 2px solid #000000;
 }
-.super-main .hero-1-box, .super-main .hero-2-box, .super-main .hero-vs-box {
+.super-main .hero-1-box,
+.super-main .hero-2-box,
+.super-main .hero-vs-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
 }
-.super-main .hero-1-box img, .super-main .hero-2-box img, .super-main .hero-vs-box img {
-  width: 40%;
+.super-main .hero-1-box img,
+.super-main .hero-2-box img,
+.super-main .hero-vs-box img {
   height: auto;
 }
-.super-main .hero-1-box.hero-1-box img, .super-main .hero-2-box.hero-1-box img, .super-main .hero-vs-box.hero-1-box img {
+.super-main .hero-1-box .text,
+.super-main .hero-2-box .text,
+.super-main .hero-vs-box .text {
+  text-align: left;
+}
+.super-main .hero-1-box img {
+  width: 40%;
   margin-right: 20px;
 }
-.super-main .hero-1-box.hero-1-box .text, .super-main .hero-2-box.hero-1-box .text, .super-main .hero-vs-box.hero-1-box .text {
+.super-main .hero-1-box .text {
   width: 55%;
-  text-align: left;
 }
-.super-main .hero-1-box.hero-2-box img, .super-main .hero-2-box.hero-2-box img, .super-main .hero-vs-box.hero-2-box img {
+.super-main .hero-2-box img {
+  width: 40%;
   margin-left: 20px;
 }
-.super-main .hero-1-box.hero-2-box .text, .super-main .hero-2-box.hero-2-box .text, .super-main .hero-vs-box.hero-2-box .text {
+.super-main .hero-2-box .text {
   width: 55%;
-  text-align: left;
 }
-.super-main .hero-1-box.hero-vs-box img, .super-main .hero-2-box.hero-vs-box img, .super-main .hero-vs-box.hero-vs-box img {
+.super-main .hero-vs-box img {
   width: 30%;
 }
-.super-main .hero-1-box.hero-vs-box .text, .super-main .hero-2-box.hero-vs-box .text, .super-main .hero-vs-box.hero-vs-box .text {
+.super-main .hero-vs-box .text {
   width: 40%;
   text-align: center;
 }
-
-h2 {
+.super-main h2 {
   font-size: 20px;
   margin-bottom: 10px;
 }
-
-p {
+.super-main p {
   font-size: 15px;
   margin: 8px;
-  color: black;
+  color: #000000;
   text-align: justify;
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
-
-.text-contact {
-  color: white;
+.super-main .text-contact {
+  color: #ffffff;
+  margin-bottom: 20px;
 }
-
-.img-heroes {
-  height: 400px;
-  width: 400px;
-  margin-top: 10px;
+.super-main .img-heroes {
+  max-width: 20%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.super-main .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  align-items: center;
+}
+.super-main .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.super-main .gender-options {
+  display: flex;
+  gap: 15px;
+  justify-content: space-evenly;
+}
+.super-main .form-actions {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
 }
 
 footer {
-  background-image: url("https://media.istockphoto.com/id/157639696/es/foto/p%C3%BArpura-espacio-estrellas.jpg?s=612x612&w=0&k=20&c=_lI0YW4IsNgarhPRY80spv_RkkmEYUoC8M8y8YXbRVM=");
+  background-image: url(https://media.istockphoto.com/id/157639696/es/foto/p%C3%BArpura-espacio-estrellas.jpg?s=612x612&w=0&k=20&c=_lI0YW4IsNgarhPRY80spv_RkkmEYUoC8M8y8YXbRVM=);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 15px;
+  overflow-x: hidden;
 }
 footer ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
 }
 footer ul li {
-  padding-left: 50px;
+  padding-left: 0;
+  flex: 0 1 auto;
+}
+footer ul li img {
+  max-width: 100%;
+  height: auto;
 }
 footer p {
-  color: white;
+  color: #ffffff;
   font-size: 20px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-actions {
+    flex-direction: column;
+    gap: 15px;
+  }
   nav ul {
     display: flex;
     flex-direction: column;
@@ -174,11 +258,12 @@ footer p {
   nav ul li {
     margin-bottom: 10px;
   }
-  nav ul a {
+  nav a {
     font-size: 14px;
   }
   .hero h1 {
     font-size: 24px;
+    text-align: center;
   }
   .hero p {
     font-size: 16px;
@@ -189,16 +274,31 @@ footer p {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+    list-style: none;
+    padding: 0;
   }
-  .hero ul li img {
+  .hero ul li {
+    display: flex;
+    justify-content: center;
+  }
+  img {
     max-width: 100%;
     height: auto;
   }
   footer ul {
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     gap: 10px;
   }
-  .heroes-box {
+  footer ul li img {
+    width: 40px;
+    height: auto;
+  }
+  footer p {
+    font-size: 16px;
+  }
+  .heroes-box,
+  .hero-1-box {
     flex-direction: column;
     align-items: center;
   }
@@ -207,16 +307,42 @@ footer p {
     width: 100%;
     max-width: 300px;
   }
+  .text {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   nav ul {
+    display: flex;
     justify-content: center;
   }
-  a {
+  nav a {
     font-size: 16px;
+  }
+  .hero ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
   footer ul {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .heroes-box {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .hero-1-box img,
+  .hero-2-box img {
+    width: 40%;
+  }
+  .hero-vs-box img {
+    width: 80%;
   }
 }
 

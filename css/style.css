@@ -35,10 +35,22 @@ header nav ul {
 }
 
 header nav ul li a {
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  border-radius: 4px; 
+}
+
+header nav ul li a:hover {
+  background-color: rgba(255, 0, 0, 0.2); 
+  color: #ffcccc; 
+}
+
+header nav ul li a:active {
+  background-color: rgba(255, 0, 0, 0.7); 
+  color: #ffffff; 
 }
 
 /* MAIN */
@@ -62,18 +74,52 @@ header nav ul li a {
     color: white;
 }
 
-.hero div ul {
-    list-style: none;
+.hero ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.hero div ul li {
-    display: inline-block;
+.hero ul li {
+  width: 500px; 
+  height: 700px; 
+  overflow: hidden; 
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
-.hero div ul li img {
-    height: 500px;
-    width: 200px;
+.hero ul li img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px; 
 }
+
+.hero ul li:hover img {
+  transform: scale(1.1); 
+}
+
+.hero ul li button {
+  all: unset; 
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 
 section h1 {
     color: white;
@@ -180,34 +226,45 @@ section form div {
   }
 
   .img-heroes {
-    height: 400px;
-    width: 400px;
+    height: auto;
+    width: auto;
     margin-top: 10px;
   }
 
 /* FOOTER */
 
 footer {
-    background-image: url(https://media.istockphoto.com/id/157639696/es/foto/p%C3%BArpura-espacio-estrellas.jpg?s=612x612&w=0&k=20&c=_lI0YW4IsNgarhPRY80spv_RkkmEYUoC8M8y8YXbRVM=);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 15px;
+  background-image: url(https://media.istockphoto.com/id/157639696/es/foto/p%C3%BArpura-espacio-estrellas.jpg?s=612x612&w=0&k=20&c=_lI0YW4IsNgarhPRY80spv_RkkmEYUoC8M8y8YXbRVM=);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  overflow-x: hidden; 
 }
 
 footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 10px; 
+  padding: 0; 
+  margin: 0; 
 }
 
 footer ul li {
-  padding-left: 50px;
+  padding-left: 0; 
+  flex: 0 1 auto; 
+}
+
+footer ul li img {
+  max-width: 100%; 
+  height: auto;
 }
 
 footer p {
   color: white;
   font-size: 20px;
+  text-align: center; 
 }
 
 /* Grid */
@@ -253,7 +310,7 @@ footer p {
 }
 
 .img-heroes {
-  max-width: 100%;
+  max-width: 20%;
   height: auto;
   margin-top: 20px;
   border-radius: 8px;
@@ -317,15 +374,20 @@ footer p {
   }
 
   footer ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    justify-items: center;
-  }
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 10px; 
+}
 
-  footer ul li img {
+footer ul li img {
     width: 40px;
-  }
+    height: auto;
+}
+
+footer p {
+    font-size: 16px; 
+}
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

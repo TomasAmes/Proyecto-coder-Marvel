@@ -1,24 +1,33 @@
 footer {
-    background-image: url("https://media.istockphoto.com/id/157639696/es/foto/p%C3%BArpura-espacio-estrellas.jpg?s=612x612&w=0&k=20&c=_lI0YW4IsNgarhPRY80spv_RkkmEYUoC8M8y8YXbRVM=");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 15px;
-  
-    ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-  
-      li {
-        padding-left: 50px;
+  background-image: $header-bg;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  overflow-x: hidden;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding-left: 0;
+      flex: 0 1 auto;
+
+      img {
+        max-width: 100%;
+        height: auto;
       }
     }
-  
-    p {
-      color: white;
-      font-size: 20px;
-      display: flex;
-      justify-content: center;
-    }
   }
+
+  p {
+    color: $white-color;
+    font-size: 20px;
+    text-align: center;
+  }
+}
